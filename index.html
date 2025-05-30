@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HENRYHALO</title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: white;
+      background-color: #151024;
+      color: #b9adde;
       text-align: center;
     }
 
     .topo {
-      background-color: #666;
+      background-color: #333;
+      background-image: url('https://via.placeholder.com/1200x200'); /* Troque aqui pela sua imagem */
+      background-size: cover;
+      background-position: center;
       height: 200px;
       position: relative;
     }
@@ -34,7 +37,7 @@
       transform: translateX(-50%);
       font-size: 24px;
       color: #444;
-      border: 1px solid #333;
+      border: 2px solid #151024;
     }
 
     .conteudo {
@@ -71,19 +74,19 @@
     }
 
     .caixa {
-      background-color: #888;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-size: 14px;
+      background-color: #5a4b7e;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-size: 15px;
       color: #fff;
-      min-width: 80px;
+      min-width: 100px;
     }
 
     hr.divider {
       border: none;
       border-top: 1px solid #ccc;
       margin: 30px 0;
-      width: 80%;
+      width: 100%;
     }
 
     .projetos {
@@ -96,7 +99,7 @@
     }
 
     .card {
-      background-color: #2e2e2e;
+      background-color: #2e2e3e;
       border-radius: 10px;
       width: 220px;
       flex-shrink: 0;
@@ -122,7 +125,7 @@
     }
 
     footer {
-      background-color: #141414;
+      background-color: #0f0b1a;
       padding: 40px 20px;
       margin-top: 40px;
     }
@@ -140,20 +143,20 @@
     }
 
     .social-links a {
-      color: white;
+      color: #b9adde;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 10px;
       font-size: 16px;
-      background-color: #2a2a2a;
+      background-color: #2a223a;
       padding: 10px 15px;
       border-radius: 8px;
       transition: background-color 0.3s ease;
     }
 
     .social-links a:hover {
-      background-color: #3a3a3a;
+      background-color: #3a2a4a;
     }
 
     .social-links i {
@@ -162,7 +165,8 @@
   </style>
 </head>
 <body>
-<!-- profile -->
+
+  <!-- topo com imagem de fundo e imagem de perfil -->
   <div class="topo">
     <div class="imagem-circular">Imagem</div>
   </div>
@@ -183,12 +187,12 @@
       </div>
     </div>
 
-<!-- Divider -->
-<hr class="divider" style="border: none; border-top: 1px solid #ccc; margin: 30px 0; width: 100%;">
+    <!-- Divider -->
+    <hr class="divider" style="border: none; border-top: 1px solid #ccc; margin: 30px 0; width: 100%;">
 
     <div class="projetos">
       <div class="card">
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/88211468_5o3Q2bY2COnkYv6.png?1726206776" alt="Projeto 1">
+        <img src="https://images.artfight.net/attack/xP7joe2nPVBWs4aMIgaQXTWfWmTVLOxgLZcfFbyTRBmjjz7UXHQuH5xX8WgW.png?t=1720213471" alt="Projeto 1">
         <h3>HEADSHOT</h3>
         <p>Pequena descrição do projeto 1.</p>
       </div>
@@ -209,28 +213,28 @@
       </div>
     </div>
 
-<!-- Divider -->
-<hr class="divider" style="border: none; border-top: 1px solid #ccc; margin: 30px 0; width: 100%;">
+    <!-- Divider -->
+    <hr class="divider" style="border: none; border-top: 1px solid #ccc; margin: 30px 0; width: 100%;">
   </div>
 
-<!-- fooster -->
-<footer>
-  <h2>Contact me!</h2>
-  <div class="social-links">
-    <a href="https://instagram.com/henry_.halo" target="_blank">
-      <span><i class="fab fa-instagram"></i> henry_.halo</span>
-    </a>
-    <a href="https://t.me/HenryHaloArts" target="_blank">
-      <span><i class="fab fa-telegram-plane"></i> HenryHaloArts</span>
-    </a>
-    <a href="https://toyhou.se/HenryHalo" target="_blank">
-      <span><i class="fas fa-user"></i> HenryHalo</span>
-    </a>
-    <a href="https://ko-fi.com/HenryHalo" target="_blank">
-      <span><i class="fas fa-coffee"></i> HenryHalo</span>
-    </a>
-  </div>
-</footer>
+  <!-- Rodapé com redes sociais -->
+  <footer>
+    <h2>Contact me!</h2>
+    <div class="social-links">
+      <a href="https://instagram.com/henry_.halo" target="_blank">
+        <span><i class="fab fa-instagram"></i> henry_.halo</span>
+      </a>
+      <a href="https://t.me/HenryHaloArts" target="_blank">
+        <span><i class="fab fa-telegram-plane"></i> HenryHaloArts</span>
+      </a>
+      <a href="https://toyhou.se/HenryHalo" target="_blank">
+        <span><i class="fas fa-user"></i> HenryHalo</span>
+      </a>
+      <a href="https://ko-fi.com/HenryHalo" target="_blank">
+        <span><i class="fas fa-coffee"></i> HenryHalo</span>
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
