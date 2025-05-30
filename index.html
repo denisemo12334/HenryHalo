@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Perfil</title>
-  <!-- Font Awesome para os ícones -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
@@ -40,7 +39,7 @@
 
     .conteudo {
       padding-top: 100px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
@@ -67,33 +66,40 @@
     .caixas {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .caixa {
       background-color: #888;
-      padding: 15px 20px;
+      padding: 10px 15px;
       border-radius: 5px;
-      font-size: 16px;
+      font-size: 14px;
       color: #fff;
-      min-width: 100px;
+      min-width: 80px;
+    }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 30px 0;
+      width: 80%;
     }
 
     .projetos {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       gap: 20px;
-      padding: 40px 20px;
-      flex-wrap: wrap;
+      padding: 20px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
     }
 
     .card {
       background-color: #2e2e2e;
       border-radius: 10px;
-      overflow: hidden;
-      width: 200px;
-      text-align: center;
+      width: 220px;
+      flex-shrink: 0;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
@@ -104,16 +110,21 @@
       display: block;
     }
 
+    .card h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
     .card p {
-      padding: 15px;
-      color: #fff;
-      font-size: 16px;
+      font-size: 14px;
+      padding: 0 10px 15px;
+      color: #ccc;
     }
 
     footer {
       background-color: #141414;
       padding: 40px 20px;
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     footer h2 {
@@ -172,27 +183,36 @@
       </div>
     </div>
 
+    <!-- Divider -->
+    <hr class="divider">
+
     <div class="projetos">
       <div class="card">
         <img src="imagem1.jpg" alt="Projeto 1">
-        <p>Texto do projeto 1</p>
+        <h3>Título 1</h3>
+        <p>Pequena descrição do projeto 1.</p>
       </div>
       <div class="card">
         <img src="imagem2.jpg" alt="Projeto 2">
-        <p>Texto do projeto 2</p>
+        <h3>Título 2</h3>
+        <p>Pequena descrição do projeto 2.</p>
       </div>
       <div class="card">
         <img src="imagem3.jpg" alt="Projeto 3">
-        <p>Texto do projeto 3</p>
+        <h3>Título 3</h3>
+        <p>Pequena descrição do projeto 3.</p>
       </div>
       <div class="card">
         <img src="imagem4.jpg" alt="Projeto 4">
-        <p>Texto do projeto 4</p>
+        <h3>Título 4</h3>
+        <p>Pequena descrição do projeto 4.</p>
       </div>
     </div>
+
+    <!-- Divider -->
+    <hr class="divider">
   </div>
 
-  <!-- Rodapé com redes sociais -->
   <footer>
     <h2>Contact me!</h2>
     <div class="social-links">
